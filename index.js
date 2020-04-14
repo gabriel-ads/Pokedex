@@ -28,7 +28,7 @@ axios.get(`https://pokeapi.co/api/v2/pokemon/${pokeRequisitado}`)
         var relacaoDeDano = Result.data.types.map(relacao => {
             return relacao.type.url
         })
-        console.log(`${pokemon.toUpperCase()}`)
+        console.log(`Voce encontrou um ${pokemon.toUpperCase()} selvagem`)
         function MostraAtributos() {
             //Pegando os tipos/atributos dos Pokemons
             var tipos = Result.data.types.map(tipo => {
